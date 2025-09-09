@@ -45,10 +45,22 @@ body, html, #root, .App {
   text-align: center;
   padding: 6rem 2rem;
   color: rgb(0, 0, 0);
-  background-image: url('/React-Portfolio/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+
+  /* Background image */
+  background-image: url('/adrien-olichon-RCAhiGJsUUE-unsplash.jpg'); /* Path relative to public folder */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /* Optional: add height to ensure it shows */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Optional overlay */
+  position: relative;
 }
 
 .hero h1 {
