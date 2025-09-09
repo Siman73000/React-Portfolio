@@ -41,11 +41,6 @@ export default function App() {
         "Developed the RCS firmware for low-atmospheric rocket control systems using Rust.",
       link: "https://github.com/Siman73000/Embedded-Systems-Engineering_RCS",
     },
-    {
-      title: "Test",
-      description: "test description",
-      link: "https://github.com/Siman73000",
-    },
   ]);
 
   // Scroll to top on page load
