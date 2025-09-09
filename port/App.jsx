@@ -130,7 +130,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0, duration: 0.5 }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.15 } }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
             >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
