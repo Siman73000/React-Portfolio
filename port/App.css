@@ -187,7 +187,7 @@ body, html, #root, .App {
 .footer {
   text-align: center;
   padding: 2rem;
-  background: #181818;
+  background: linear-gradient(90deg, #585858, #181818);
   color: white;
   font-size: 0.9rem;
 }
