@@ -35,8 +35,8 @@ export default function App() {
       link: "https://github.com/Siman73000/Embedded-Systems-Engineering_RCS",
     },
     {
-      title: "test project",
-      description: "Test description.",
+      title: "Test",
+      description: "test description",
       link: "https://github.com/Siman73000",
     },
   ]);

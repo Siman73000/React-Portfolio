@@ -45,8 +45,11 @@ body, html, #root, .App {
   text-align: center;
   padding: 6rem 2rem;
   color: rgb(0, 0, 0);
+  background-image: url('/port/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 .hero h1 {
   font-size: 3rem;
