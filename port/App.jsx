@@ -104,7 +104,7 @@ export default function App() {
             preserveAspectRatio="none"
           >
             <path
-              fill="rgb(209, 209, 209)"  /* matches your about section bg */
+              fill="rgb(209, 209, 209)"
               d="M0,128L48,144C96,160,192,192,288,202.7C384,213,480,203,576,186.7C672,171,768,149,864,144C960,139,1056,149,1152,170.7C1248,192,1344,224,1392,240L1440,256V320H0Z"
             ></path>
           </svg>
@@ -124,10 +124,11 @@ export default function App() {
         <p>
           Alan Kay once said, “The best way to predict the future is to invent
           it.” This inspires me to push forwards toward creating a better world
-          for myself, family, and humanity as a whole. This is why I am going
-          to work for NASA in the future as a Software Engineer. This is
-          important to me because I'm not just helping my community, my nation,
-          or my family. I am helping humanity become the best it possibly can be!
+          for myself, family, and humanity as a whole, and is why I
+          chose Software Engineering in the first place. Createing a
+          future where life is easier and smoother for our generations to come
+          is highly important to me and should drive us too innovate.
+           I am helping humanity become the best it possibly can be!
         </p>
       </motion.section>
 
