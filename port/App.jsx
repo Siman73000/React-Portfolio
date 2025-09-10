@@ -96,6 +96,19 @@ export default function App() {
         >
           View My Work
         </motion.button>
+        {/* Wave Border */}
+        <div className="wave">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="rgb(209, 209, 209)"  /* matches your about section bg */
+              d="M0,128L48,144C96,160,192,192,288,202.7C384,213,480,203,576,186.7C672,171,768,149,864,144C960,139,1056,149,1152,170.7C1248,192,1344,224,1392,240L1440,256V320H0Z"
+            ></path>
+          </svg>
+        </div>
       </motion.header>
 
       {/* About Section */}
