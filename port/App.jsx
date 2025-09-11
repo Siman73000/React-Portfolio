@@ -32,7 +32,7 @@ export default function App() {
     {
       title: "Approximation of Pi",
       description:
-        "Using the Ramanujan method to approximate Pi to a high degree of accuracy in C.",
+        "Using a method by Ramanujan to approximate Pi to a high degree of accuracy in C.",
       link: "https://github.com/Siman73000/Pi_in_C",
     },
     {
