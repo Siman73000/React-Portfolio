@@ -8,8 +8,8 @@ export default function App() {
     {
       title: "Real-Time Particle Fluid Simulation",
       description:
-        "A RTPFS Deep Learning algorithm built in C, x86-64 Assembly, and Python.",
-      link: "https://github.com/Siman73000/Real-Time-Hydrodynamics-PFS",
+        "A RTPFS Deep Learning algorithm built in C, x86-64 Assembly, and Python. Use 'E' to push particles, and 'SHIFT + E' to pull.",
+      link: "https://siman73000.github.io/RTPFS_Website/",
     },
     {
       title: "Othello Operation System",
