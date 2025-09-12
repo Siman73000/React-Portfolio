@@ -129,7 +129,17 @@ body, html, #root, .App {
   color: #182848;
 }
 
-.about p, .contact p, .education p {
+.about p, .contact p{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.education p {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;

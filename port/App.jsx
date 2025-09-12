@@ -43,6 +43,30 @@ export default function App() {
     },
   ]);
 
+  const [education] = useState([
+    {
+      title: "Bachelor of Science (B.S.) - Computer Science",
+      description: "East Central University",
+    },
+    {
+      title: "(B.S.) Minor - General Mathematics",
+      description: "East Central University",
+    },
+    {
+      title: "Independent Computer Science Studies",
+      description: "OSUIT",
+    },
+    {
+      title: "Information Technology Certifications",
+      description: "Pontotoc Technology Center",
+    },
+    {
+      title: "High-School Education",
+      description: "Latta Public High-School",
+    },
+
+  ]);
+
   // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -160,7 +184,7 @@ export default function App() {
           ))}
         </div>
       </section>
-
+      
       {/* Education Section */}
       <motion.section
         id="education"
@@ -174,7 +198,7 @@ export default function App() {
         <p classname="education">
           Test education text.
         </p>
-        
+
       </motion.section>
 
       {/* Contact Section */}
