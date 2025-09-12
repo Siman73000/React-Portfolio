@@ -122,14 +122,14 @@ body, html, #root, .App {
   background-color: rgb(209, 209, 209);
 }
 
-.about h2, .projects h2, .contact h2 {
+.about h2, .projects h2, .contact h2, .education h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
   color: #182848;
 }
 
-.about p, .contact p {
+.about p, .contact p, .education p {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
