@@ -57,6 +57,7 @@ export default function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <a href="#education">Education</a>
         </div>
       </nav>
 
@@ -159,6 +160,22 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      {/* Education Section */}
+      <motion.section
+        id="education"
+        className="education"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        translation={{ duration: 1 }}
+      >
+        <h2>Education</h2>
+        <p classname="education">
+          Test education text.
+        </p>
+        
+      </motion.section>
 
       {/* Contact Section */}
       <motion.section
