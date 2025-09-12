@@ -186,8 +186,18 @@ export default function App() {
       </section>
       
       {/* Education Section */}
+      <section id="education" className="education">
+        <h2>Education</h2>
+        <div className="education-grid">
+          {education.map((education, idx) => (
+            <motion.div
+            key={idx}
+            className="education-card"
+            ></motion.div>
+          ))}
+        </div>
+      </section>
       <motion.section
-        id="education"
         className="education"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -196,7 +206,11 @@ export default function App() {
       >
         <h2>Education</h2>
         <p classname="education">
-          Test education text.
+          Bachelor of Science (B.S.) - Computer Science
+          East Central University
+
+          B.S. Minor - General Mathematics
+          East Central University
         </p>
 
       </motion.section>
