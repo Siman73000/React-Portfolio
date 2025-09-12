@@ -115,7 +115,7 @@ body, html, #root, .App {
 }
 
 /* About Section */
-.about, .projects, .contact {
+.about, .projects, .contact, .education {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -181,6 +181,10 @@ body, html, #root, .App {
 
 .project-card a:hover {
   color: #764ba2;
+}
+
+.education p {
+  color: black;
 }
 
 /* Contact Section Links */
