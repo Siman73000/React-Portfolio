@@ -189,12 +189,12 @@ export default function App() {
             className="hero-overlay"
             style={{ zIndex: 0 }}
             animate={{ y: [0, -20] }}
-            transition={{ yoyo: Infinity, duration: 0 }}
+            transition={{ yoyo: Infinity, duration: 1 }}
         />
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0 }}
+          transition={{ duration: 1 }}
         >
           Hi, I’m Simon 👋
         </motion.h1>
