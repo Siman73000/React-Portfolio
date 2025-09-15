@@ -50,11 +50,11 @@ export default function App() {
     },
     {
       title: "Bachelor of Science (B.S.) - Computer Science",
-      description: "East Central University 2023-2026",
+      description: "East Central University | 2023-2026 | 3.8 GPA",
     },
     {
       title: "(B.S.) Minor - General Mathematics",
-      description: "East Central University 2023-2026",
+      description: "East Central University 2023-2026 | 3.8 GPA",
     },
     {
       title: "Independent Computer Science Studies",
