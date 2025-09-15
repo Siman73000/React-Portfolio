@@ -9,9 +9,13 @@ export function Experience({ experience }) {
       <h2>Experience</h2>
       <div className="experience-timeline">
         {experience.map((job, idx) => (
-          <div
+          <motion.div
             key={idx}
             className="experience-entry shadow-md rounded-2xl bg-white"
+            initial={{ opacity: 0, x: idx % 2 === 0 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: idx * 0.1 }}
           >
             <div className="p-6">
               <h3 className="font-semibold text-lg">{job.title}</h3>
@@ -22,7 +26,7 @@ export function Experience({ experience }) {
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
@@ -144,7 +148,7 @@ export default function App() {
     },
     {
       title: "IT Systems Support Technician",
-      description: "The City of Ada",
+      description: "The City of Ada | 2023-2024",
       details: [
         "Utilize CI/CD frameworks to build and deploy version control servers.",
         "Network systems administration for 100+ employees.",
@@ -176,14 +180,17 @@ export default function App() {
       {/* Hero Section */}
       <motion.header
         className="hero"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-        }}
+        style={{ backgroundImage: `url(${heroImage})` }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="hero-overlay" />
+        <motion.div 
+            className="hero-overlay"
+            style={{ zIndex: 0 }}
+            animate={{ y: [0, -20] }}
+            transition={{ yoyo: Infinity, duration: 5 }}
+        />
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -253,19 +260,19 @@ export default function App() {
             <motion.div
               key={idx}
               className="project-card"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0, duration: 0 }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
+              transition={{
+                delay: idx * 0.15,
+                type: "spring",
+                stiffness: 100,
+              }}
+              whileHover={{ scale: 1.08, rotate: [0, -2, 2, 0], transition: { duration: 0.3 } }}
             >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 View Project →
               </a>
             </motion.div>

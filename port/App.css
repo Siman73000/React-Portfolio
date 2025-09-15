@@ -286,6 +286,24 @@ body, html, #root, .App {
   color: #764ba2;
 }
 
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  background: #ffd700;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(20px, -15px); }
+  100% { transform: translate(0,0); }
+}
+
 /* Contact Section Links */
 .contact a {
   color: #667eea;
