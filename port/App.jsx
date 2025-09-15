@@ -183,13 +183,13 @@ export default function App() {
         style={{ backgroundImage: `url(${heroImage})` }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0 }}
       >
         <motion.div 
             className="hero-overlay"
             style={{ zIndex: 0 }}
             animate={{ y: [0, -20] }}
-            transition={{ yoyo: Infinity, duration: 5 }}
+            transition={{ yoyo: Infinity, duration: 0 }}
         />
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
