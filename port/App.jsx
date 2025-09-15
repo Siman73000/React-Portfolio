@@ -84,6 +84,10 @@ export default function App() {
       description: "The Chickasaw Nation",
     },
     {
+      title: "Mainframe Developer",
+      description: "IBM",
+    },
+    {
       title: "Foundations of Data Science",
       description: "Google Certification",
     },
