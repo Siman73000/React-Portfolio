@@ -194,7 +194,7 @@ export default function App() {
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0 }}
         >
           Hi, I’m Simon 👋
         </motion.h1>
