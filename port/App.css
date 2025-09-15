@@ -177,6 +177,66 @@ body, html, #root, .App {
   margin: 0;
 }
 
+/* Experience Section */
+.experience {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(209, 209, 209);
+}
+
+.experience h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #182848;
+}
+
+.experience-timeline {
+  position: relative;
+  border-left: 3px solid #764ba2; /* Different color for experience */
+  padding-left: 3rem;
+}
+
+.experience-entry {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.experience-entry::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: #764ba2; /* Match timeline color */
+  border-radius: 50%;
+}
+
+.experience-entry h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #182848;
+}
+
+.experience-entry p {
+  color: black;
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.experience-entry ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #333;
+}
+
+.experience-entry ul li {
+  margin-bottom: 0.3rem;
+}
+
 
 .about p {
   color: black;
