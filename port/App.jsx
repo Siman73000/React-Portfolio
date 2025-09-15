@@ -32,9 +32,6 @@ export function Experience({ experience }) {
     </section>
   );
 }
-
-
-
 export default function App() {
   const [projects] = useState([
     {
@@ -74,7 +71,6 @@ export default function App() {
       link: "https://github.com/Siman73000/Embedded-Systems-Engineering_RCS",
     },
   ]);
-
   const [education] = useState([
     {
       title: "Doctor of Philosophy (P.h.D) - Computer Science",
@@ -101,7 +97,6 @@ export default function App() {
       description: "Latta Public High-School",
     },
   ]);
-
   const [certifications] = useState([
     {
       title: "CompTIA A+",
@@ -124,7 +119,6 @@ export default function App() {
       description: "Google Certification",
     },
   ]);
-
   const [experience] = useState([
     {
       title: "Software Engineer",
@@ -156,13 +150,9 @@ export default function App() {
       ],
     },
   ]);
-
-  // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-
   return (
     <div className="App">
       {/* Navbar */}
@@ -176,7 +166,6 @@ export default function App() {
           <a href="#contact">Contact</a>
         </div>
       </nav>
-
       {/* Hero Section */}
       <motion.header
         className="hero"
@@ -196,7 +185,7 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I’m Simon 👋
+          Hi, I am Simon 👋
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -230,7 +219,6 @@ export default function App() {
           </svg>
         </div>
       </motion.header>
-
       {/* About Section */}
       <motion.section
         id="about"
@@ -251,7 +239,6 @@ export default function App() {
            I am helping humanity become the best it possibly can be!
         </p>
       </motion.section>
-
       {/* Projects Section */}
       <section id="projects" className="projects">
         <h2>Projects</h2>
@@ -279,10 +266,7 @@ export default function App() {
           ))}
         </div>
       </section>
-
       <Experience experience={experience} />
-
-      
       {/* Education Section */}
       <motion.section
         id="education"
@@ -329,8 +313,6 @@ export default function App() {
           </div>
         </div>
       </motion.section>
-
-
       {/* Contact Section */}
       <motion.section
         id="contact"
