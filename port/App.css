@@ -157,7 +157,7 @@ body, html, #root, .App {
 .education-entry::before {
   content: "";
   position: absolute;
-  left: -11px;
+  left: -1.5rem;
   top: 6px;
   width: 16px;
   height: 16px;
