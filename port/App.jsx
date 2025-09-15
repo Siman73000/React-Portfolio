@@ -45,12 +45,16 @@ export default function App() {
 
   const [education] = useState([
     {
+      title: "Doctor of Philosophy (P.h.D) - Computer Science",
+      description: "Oklahoma State University 2026-2030",
+    },
+    {
       title: "Bachelor of Science (B.S.) - Computer Science",
-      description: "East Central University",
+      description: "East Central University 2023-2026",
     },
     {
       title: "(B.S.) Minor - General Mathematics",
-      description: "East Central University",
+      description: "East Central University 2023-2026",
     },
     {
       title: "Independent Computer Science Studies",
