@@ -186,34 +186,32 @@ export default function App() {
       </section>
       
       {/* Education Section */}
-      <section id="education" className="education">
-        <h2>Education</h2>
-        <div className="education-grid">
-          {education.map((education, idx) => (
-            <motion.div
-            key={idx}
-            className="education-card"
-            ></motion.div>
-          ))}
-        </div>
-      </section>
       <motion.section
+        id="education"
         className="education"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        translation={{ duration: 1 }}
+        transition={{ duration: 1 }}
       >
         <h2>Education</h2>
-        <p classname="education">
-          Bachelor of Science (B.S.) - Computer Science
-          East Central University
-
-          B.S. Minor - General Mathematics
-          East Central University
-        </p>
-
+        <div className="education-timeline">
+          {education.map((edu, idx) => (
+            <motion.div
+              key={idx}
+              className="education-entry"
+              initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1, duration: 0.6 }}
+            >
+              <h3>{edu.title}</h3>
+              <p>{edu.description}</p>
+            </motion.div>
+          ))}
+        </div>
       </motion.section>
+
 
       {/* Contact Section */}
       <motion.section
