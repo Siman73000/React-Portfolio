@@ -268,7 +268,7 @@ export default function App() {
                 type: "spring",
                 stiffness: 100,
               }}
-              whileHover={{ scale: 1.08, rotate: [0, -2, 2, 0], transition: { duration: 0.1 } }}
+              whileHover={{ scale: 1.08, rotate: [0, -2, 2, 0], transition: { duration: 0.2 } }}
             >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
