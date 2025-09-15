@@ -3,40 +3,32 @@ import { motion } from "framer-motion";
 import heroImage from "/adrien-olichon-RCAhiGJsUUE-unsplash.jpg";
 import "./App.css";
 
-export function Experience() {
+export function Experience({ experience }) {
   return (
     <section id="experience" className="experience">
       <h2>Experience</h2>
       <div className="experience-timeline">
-        
-        <div className="experience-entry shadow-md rounded-2xl bg-white">
-          <div className="p-6">
-            <h3 className="font-semibold text-lg">Software Engineering Intern</h3>
-            <p className="text-sm text-gray-600 mb-2">TechCorp Inc. — Summer 2024</p>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>Developed and tested React + Node.js features for internal tools.</li>
-              <li>Optimized API queries, improving response time by 15%.</li>
-              <li>Worked with Agile teams to deliver sprint goals.</li>
-            </ul>
+        {experience.map((job, idx) => (
+          <div
+            key={idx}
+            className="experience-entry shadow-md rounded-2xl bg-white"
+          >
+            <div className="p-6">
+              <h3 className="font-semibold text-lg">{job.title}</h3>
+              <p className="text-sm text-gray-600 mb-2">{job.description}</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                {job.details.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div className="experience-entry shadow-md rounded-2xl bg-white">
-          <div className="p-6">
-            <h3 className="font-semibold text-lg">IT Support Assistant</h3>
-            <p className="text-sm text-gray-600 mb-2">University IT Department — 2022–2023</p>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>Provided tech support for 200+ students and staff.</li>
-              <li>Troubleshot hardware/software issues across Windows & Linux.</li>
-              <li>Maintained inventory and deployed campus IT equipment.</li>
-            </ul>
-          </div>
-        </div>
-
+        ))}
       </div>
     </section>
   );
 }
+
 
 
 export default function App() {
@@ -126,6 +118,27 @@ export default function App() {
     {
       title: "Foundations of Data Science",
       description: "Google Certification",
+    },
+  ]);
+
+  const [experience] = useState([
+    {
+      title: "Software Engineering Intern",
+      description: "TechCorp Inc. — Summer 2024",
+      details: [
+        "Developed and tested React + Node.js features for internal tools.",
+        "Optimized API queries, improving response time by 15%.",
+        "Worked with Agile teams to deliver sprint goals.",
+      ],
+    },
+    {
+      title: "IT Support Assistant",
+      description: "University IT Department — 2022–2023",
+      details: [
+        "Provided tech support for 200+ students and staff.",
+        "Troubleshot hardware/software issues across Windows & Linux.",
+        "Maintained inventory and deployed campus IT equipment.",
+      ],
     },
   ]);
 
@@ -295,8 +308,7 @@ export default function App() {
         </div>
       </motion.section>
 
-      <Experience />
-
+      <Experience experience={experience} />
 
       {/* Contact Section */}
       <motion.section
