@@ -68,7 +68,25 @@ export default function App() {
       title: "High-School Education",
       description: "Latta Public High-School",
     },
+  ]);
 
+  const [certifications] = useState([
+    {
+      title: "CompTIA A+",
+      description: "Pontotoc Technology Center",
+    },
+    {
+      title: "CompTIA Network+",
+      description: "The Chickasaw Nation",
+    },
+    {
+      title: "CompTIA DataX",
+      description: "The Chickasaw Nation",
+    },
+    {
+      title: "Foundations of Data Science",
+      description: "Google Certification",
+    },
   ]);
 
   // Scroll to top on page load
@@ -199,23 +217,42 @@ export default function App() {
         transition={{ duration: 1 }}
       >
         <h2>Education</h2>
-        <div className="education-timeline">
-          {education.map((edu, idx) => (
-            <motion.div
-              key={idx}
-              className="education-entry"
-              initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1, duration: 0.6 }}
-            >
-              <h3>{edu.title}</h3>
-              <p>{edu.description}</p>
-            </motion.div>
-          ))}
+        <div className="education-container">
+          {/* Left Column - Education */}
+          <div className="education-timeline">
+            {education.map((edu, idx) => (
+              <motion.div
+                key={idx}
+                className="education-entry"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.6 }}
+              >
+                <h3>{edu.title}</h3>
+                <p>{edu.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Right Column - Certifications */}
+          <div className="education-timeline">
+            {certifications.map((cert, idx) => (
+              <motion.div
+                key={idx}
+                className="education-entry"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.6 }}
+              >
+                <h3>{cert.title}</h3>
+                <p>{cert.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </motion.section>
-
 
       {/* Contact Section */}
       <motion.section

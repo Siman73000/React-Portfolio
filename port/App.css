@@ -135,11 +135,18 @@ body, html, #root, .App {
   text-align: center;
 }
 
-.education-timeline {
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   margin-top: 2rem;
+}
+
+/* Timeline styling (same as before) */
+.education-timeline {
   position: relative;
   border-left: 3px solid #182848;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .education-entry {
@@ -150,10 +157,10 @@ body, html, #root, .App {
 .education-entry::before {
   content: "";
   position: absolute;
-  left: -1.5rem;
-  top: 5px;
-  width: 15px;
-  height: 15px;
+  left: -11px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
   background: #182848;
   border-radius: 50%;
 }
@@ -167,7 +174,9 @@ body, html, #root, .App {
 .education-entry p {
   color: black;
   font-size: 1rem;
+  margin: 0;
 }
+
 
 .about p {
   color: black;
