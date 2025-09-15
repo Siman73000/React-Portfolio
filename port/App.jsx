@@ -123,21 +123,32 @@ export default function App() {
 
   const [experience] = useState([
     {
-      title: "Software Engineering Intern",
-      description: "TechCorp Inc. — Summer 2024",
+      title: "Software Engineer",
+      description: "Freelance | 2022-Present",
       details: [
         "Developed and tested React + Node.js features for internal tools.",
-        "Optimized API queries, improving response time by 15%.",
+        "Optimized API queries, improving response time by 50%.",
         "Worked with Agile teams to deliver sprint goals.",
+        "Provide Full-Stack systems engineering for enterprise environments.",
       ],
     },
     {
-      title: "IT Support Assistant",
-      description: "University IT Department — 2022–2023",
+      title: "Software & Automation Developer (IT Service)",
+      description: "The Chickasaw Nation | 2024-Present",
       details: [
-        "Provided tech support for 200+ students and staff.",
-        "Troubleshot hardware/software issues across Windows & Linux.",
-        "Maintained inventory and deployed campus IT equipment.",
+        "Refactor and design code for 1M+ transactions.",
+        "Increase codebase efficency by over 30%.",
+        "Maintain and debug PowerShell, C/C++, Rust, .NET, etc.",
+        "Securely query data through encrypted LDAPS/SSH channels.",
+      ],
+    },
+    {
+      title: "IT Systems Support Technician",
+      description: "The City of Ada",
+      details: [
+        "Utilize CI/CD frameworks to build and deploy version control servers.",
+        "Network systems administration for 100+ employees.",
+        "Design automation tools in Python, C#, and PowerShell",
       ],
     },
   ]);
