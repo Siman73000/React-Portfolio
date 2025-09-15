@@ -271,6 +271,9 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      <Experience experience={experience} />
+
       
       {/* Education Section */}
       <motion.section
@@ -319,7 +322,6 @@ export default function App() {
         </div>
       </motion.section>
 
-      <Experience experience={experience} />
 
       {/* Contact Section */}
       <motion.section
