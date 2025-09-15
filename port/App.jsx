@@ -5,11 +5,11 @@ import "./App.css";
 
 export function Experience() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
-      <div className="space-y-8">
+    <section id="experience" className="experience">
+      <h2>Experience</h2>
+      <div className="experience-timeline">
         
-        <div className="shadow-md rounded-2xl bg-white">
+        <div className="experience-entry shadow-md rounded-2xl bg-white">
           <div className="p-6">
             <h3 className="font-semibold text-lg">Software Engineering Intern</h3>
             <p className="text-sm text-gray-600 mb-2">TechCorp Inc. — Summer 2024</p>
@@ -21,7 +21,7 @@ export function Experience() {
           </div>
         </div>
 
-        <div className="shadow-md rounded-2xl bg-white">
+        <div className="experience-entry shadow-md rounded-2xl bg-white">
           <div className="p-6">
             <h3 className="font-semibold text-lg">IT Support Assistant</h3>
             <p className="text-sm text-gray-600 mb-2">University IT Department — 2022–2023</p>
@@ -34,9 +34,10 @@ export function Experience() {
         </div>
 
       </div>
-    </div>
-  )
+    </section>
+  );
 }
+
 
 export default function App() {
   const [projects] = useState([
@@ -295,7 +296,7 @@ export default function App() {
       </motion.section>
 
       <Experience />
-      
+
 
       {/* Contact Section */}
       <motion.section
