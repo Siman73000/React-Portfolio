@@ -294,6 +294,9 @@ export default function App() {
         </div>
       </motion.section>
 
+      <Experience />
+      
+
       {/* Contact Section */}
       <motion.section
         id="contact"
