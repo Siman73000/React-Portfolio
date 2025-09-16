@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import heroImage from "/adrien-olichon-RCAhiGJsUUE-unsplash.jpg";
 import "./App.css";
-import useIsMobile from "./useIsMobile";
-
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export function Experience({ experience }) {
   return (
@@ -157,20 +156,21 @@ export default function App() {
   }, []);
   const isMobile = useIsMobile();
   return (
-    <div className="App">
-      {/* Navbar */}
-      if (!isMobile) {
-        <nav className="navbar">
-          <h1>Simon Hamilton</h1>
-          <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
-      }
+  <div className="App">
+    {!isMobile && (
+      <nav className="navbar">
+        <h1>Simon Hamilton</h1>
+        <div>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    )}
+
+
       {/* Hero Section */}
       <motion.header
         className="hero"
