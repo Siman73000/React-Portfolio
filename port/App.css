@@ -337,6 +337,6 @@ body, html, #root, .App {
     font-size: 1rem;
   }
   .navbar div {
-    display: hidden;
+    display: none;
   }
 }
