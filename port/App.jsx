@@ -156,16 +156,18 @@ export default function App() {
   return (
     <div className="App">
       {/* Navbar */}
-      <nav className="navbar">
-        <h1>Simon Hamilton</h1>
-        <div>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+      {!isMobile && (
+        <nav className="navbar">
+          <h1>Simon Hamilton</h1>
+          <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      )}
       {/* Hero Section */}
       <motion.header
         className="hero"
