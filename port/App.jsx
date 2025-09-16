@@ -159,7 +159,7 @@ export default function App() {
   return (
     <div className="App">
       {/* Navbar */}
-      {!isMobile && (
+      if (!isMobile) {
         <nav className="navbar">
           <h1>Simon Hamilton</h1>
           <div>
@@ -170,7 +170,7 @@ export default function App() {
             <a href="#contact">Contact</a>
           </div>
         </nav>
-      )}
+      }
       {/* Hero Section */}
       <motion.header
         className="hero"
