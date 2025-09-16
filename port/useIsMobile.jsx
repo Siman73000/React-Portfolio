@@ -1,22 +1,17 @@
 import { useState, useEffect } from "react";
 
-export default function useIsMobile(maxWidth = 820) {
+export default function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= maxWidth);
-    };
+    // Check screen width
+    const checkMobile = () => setIsMobile(window.innerWidth <= breakpoint);
 
-    checkMobile();
+    checkMobile(); // Run once on mount
     window.addEventListener("resize", checkMobile);
-    window.addEventListener("orientationchange", checkMobile);
 
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-      window.removeEventListener("orientationchange", checkMobile);
-    };
-  }, [maxWidth]);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, [breakpoint]);
 
   return isMobile;
 }
