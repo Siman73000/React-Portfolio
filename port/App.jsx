@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import heroImage from "/adrien-olichon-RCAhiGJsUUE-unsplash.jpg";
 import "./App.css";
+import useIsMobile from "./useIsMobile";
+
 
 export function Experience({ experience }) {
   return (
@@ -153,6 +155,7 @@ export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const isMobile = useIsMobile();
   return (
     <div className="App">
       {/* Navbar */}
