@@ -336,4 +336,8 @@ body, html, #root, .App {
   .hero p {
     font-size: 1rem;
   }
+  .navbar div {
+    display: flex;
+    flex-direction: column;
+  }
 }
