@@ -1,16 +1,17 @@
-import { useState, useEffect } from "react";
-
-export default function useIsMobile(breakpoint = 1024) {
+export default function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check screen width
-    const checkMobile = () => setIsMobile(window.innerWidth <= breakpoint);
+    const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`);
 
-    checkMobile(); // Run once on mount
-    window.addEventListener("resize", checkMobile);
+    // Set initial value
+    setIsMobile(mediaQuery.matches);
 
-    return () => window.removeEventListener("resize", checkMobile);
+    // Listener for changes
+    const handler = (event) => setIsMobile(event.matches);
+    mediaQuery.addEventListener("change", handler);
+
+    return () => mediaQuery.removeEventListener("change", handler);
   }, [breakpoint]);
 
   return isMobile;
