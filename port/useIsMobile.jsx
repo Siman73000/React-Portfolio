@@ -1,5 +1,5 @@
 // Hook matches the CSS mobile breakpoint
-export default function useIsMobile(breakpoint = 600) {
+export default function useIsMobile(breakpoint = 1440) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
