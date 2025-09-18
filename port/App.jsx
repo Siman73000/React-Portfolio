@@ -151,8 +151,8 @@ export default function App() {
       ],
     },
   ]);
-const isMobile = useIsMobile();
-const [mounted, setMounted] = useState(false);
+  const isMobile = useIsMobile();
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
     window.scrollTo(0, 0);
