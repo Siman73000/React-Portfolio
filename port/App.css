@@ -328,7 +328,6 @@ body, html, #root, .App {
   font-size: 0.9rem;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -337,6 +336,6 @@ body, html, #root, .App {
     font-size: 1rem;
   }
   .navbar {
-    display: none;
+    display: none !important;
   }
 }
