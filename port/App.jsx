@@ -152,14 +152,12 @@ export default function App() {
     },
   ]);
   const isMobile = useIsMobile();
-  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setMounted(true);
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="App">
-      {mounted && isMobile === false && (
+      {(
         <nav className="navbar">
           <h1>Simon Hamilton</h1>
           <div>
