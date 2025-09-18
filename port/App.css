@@ -329,7 +329,7 @@ body, html, #root, .App {
 }
 
 /* Mobile adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
@@ -337,7 +337,6 @@ body, html, #root, .App {
     font-size: 1rem;
   }
   .navbar div {
-    display: flex;
-    flex-direction: column;
+    display: none !important;
   }
 }
