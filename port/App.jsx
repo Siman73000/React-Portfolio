@@ -151,28 +151,26 @@ export default function App() {
       ],
     },
   ]);
+const isMobile = useIsMobile();
+const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
     window.scrollTo(0, 0);
   }, []);
-  const [mounted, setMounted] = useState(false);
-  const isMobile = useIsMobile();
   return (
-  <div className="App">
-    {isMobile !== null && mounted && !isMobile && (
-      <nav className="navbar">
-        <h1>Simon Hamilton</h1>
-        <div>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    )}
-
-
+    <div className="App">
+      {mounted && isMobile === false && (
+        <nav className="navbar">
+          <h1>Simon Hamilton</h1>
+          <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      )}
       {/* Hero Section */}
       <motion.header
         className="hero"
