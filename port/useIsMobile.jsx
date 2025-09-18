@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null); // start with null
 
   useEffect(() => {
     const ua = navigator.userAgent || navigator.vendor || window.opera;
