@@ -1,7 +1,5 @@
-// Hook matches the CSS mobile breakpoint
 export default function useIsMobile(breakpoint = 600) {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`);
 
@@ -12,6 +10,5 @@ export default function useIsMobile(breakpoint = 600) {
 
     return () => mediaQuery.removeEventListener("change", handler);
   }, [breakpoint]);
-
   return isMobile;
 }
