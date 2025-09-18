@@ -1,14 +1,15 @@
-export default function useIsMobile(breakpoint = 600) {
+import { useState, useEffect } from "react";
+
+export default function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
-    const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`);
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const mobileUA = /android|iphone|ipad|ipod|windows phone|blackberry|mobile/i;
+    const hasTouch = "maxTouchPoints" in navigator && navigator.maxTouchPoints > 0;
 
-    setIsMobile(mediaQuery.matches);
+    setIsMobile(mobileUA.test(ua) || hasTouch);
+  }, []);
 
-    const handler = (event) => setIsMobile(event.matches);
-    mediaQuery.addEventListener("change", handler);
-
-    return () => mediaQuery.removeEventListener("change", handler);
-  }, [breakpoint]);
   return isMobile;
 }

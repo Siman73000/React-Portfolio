@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import heroImage from "/adrien-olichon-RCAhiGJsUUE-unsplash.jpg";
 import "./App.css";
-import { isMobile, isTablet, isDesktop } from 'react-device-detect';
+import useIsMobile from "./useIsMobile";
 
 export function Experience({ experience }) {
   return (
