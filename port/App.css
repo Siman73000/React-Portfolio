@@ -329,7 +329,7 @@ body, html, #root, .App {
 }
 
 /* Mobile adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .hero h1 {
     font-size: 2rem;
   }
