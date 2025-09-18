@@ -157,7 +157,7 @@ export default function App() {
     <div className="App">
         <nav className="navbar">
           <h1>Simon Hamilton</h1>
-          <div>
+          <div className="navigationbar">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
