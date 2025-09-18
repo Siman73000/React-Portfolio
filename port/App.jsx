@@ -157,7 +157,7 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      {(
+      {!isMobile() && isMobile !== null (
         <nav className="navbar">
           <h1>Simon Hamilton</h1>
           <div>
@@ -168,6 +168,9 @@ export default function App() {
             <a href="#contact">Contact</a>
           </div>
         </nav>
+      )}
+      {isMobile() == true (
+        <h1>Simon Hamilton</h1>
       )}
       {/* Hero Section */}
       <motion.header
