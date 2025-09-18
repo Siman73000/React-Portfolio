@@ -329,14 +329,15 @@ body, html, #root, .App {
 }
 
 /* Mobile adjustments */
-@media (max-width: 1440px) {
+@media (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;
   }
   .hero p {
     font-size: 1rem;
   }
-  .navbar {
-    display: none !important;
+  .navbar div {
+    display: flex;
+    flex-direction: column;
   }
 }
