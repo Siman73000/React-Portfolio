@@ -73,10 +73,6 @@ export default function App() {
   ]);
   const [education] = useState([
     {
-      title: "Doctor of Philosophy (P.h.D) - Computer Science",
-      description: "Oklahoma State University 2026-2030",
-    },
-    {
       title: "Bachelor of Science (B.S.) - Computer Science",
       description: "East Central University | 2023-2026 | 3.8 GPA",
     },
@@ -104,10 +100,6 @@ export default function App() {
     },
     {
       title: "CompTIA Network+",
-      description: "The Chickasaw Nation",
-    },
-    {
-      title: "CompTIA DataX",
       description: "The Chickasaw Nation",
     },
     {
