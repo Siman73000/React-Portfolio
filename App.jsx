@@ -43,7 +43,7 @@ export default function App() {
     {
       title: "Othello Operation System",
       description:
-        "A real-time OS with a fully custom kernel, bootloader, and shell. It is built in C, Rust, and x86-64 Assembly.",
+        "A hand-built OS with a fully custom kernel, bootloader, shell, and GUI. It is built in x86-64 Assembly for UEFI/BIOS, and Rust for the kernel.",
       link: "https://othelloofficialsiteofweb.vercel.app/",
     },
     {
