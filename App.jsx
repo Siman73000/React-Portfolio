@@ -176,7 +176,7 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I am Simon 👋
+          Hi, I am Simon
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -314,7 +314,7 @@ export default function App() {
         transition={{ duration: 1 }}
       >
         <h2>Contact</h2>
-        <p className="text-black">Let’s connect! Reach out via:</p>
+        <p className="text-black">Let&apos;s connect! Reach out via:</p>
         <p>
           <a href="mailto:si.p.h@outlook.com">Email</a> |{" "}
           <a
