@@ -1,0 +1,9 @@
+{
+  "name": "react-portfolio-vercel",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix port run dev",
+    "build": "npm --prefix port run build",
+    "preview": "npm --prefix port run preview"
+  }
+}
