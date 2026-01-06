@@ -1,6 +1,0 @@
-{
-  "installCommand": "cd port && pnpm install --frozen-lockfile",
-  "buildCommand": "cd port && pnpm run build",
-  "outputDirectory": "port/dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
