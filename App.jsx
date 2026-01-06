@@ -44,7 +44,7 @@ export default function App() {
       title: "Othello Operation System",
       description:
         "A real-time OS with a fully custom kernel, bootloader, and shell. It is built in C, Rust, and x86-64 Assembly.",
-      link: "https://github.com/Siman73000/Othello",
+      link: "https://othelloofficialsiteofweb.vercel.app/",
     },
     {
       title: "The Iago Programming Language",
